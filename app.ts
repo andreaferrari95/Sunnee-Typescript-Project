@@ -97,3 +97,52 @@ class ProcessoProduzione implements IProcessoProduzione {
     );
   }
 }
+
+const costume1 = new Prodotto(
+  "costume da bagno",
+  "001",
+  "M",
+  "blu",
+  "disponibile"
+);
+const costume2 = new Prodotto(
+  "costume da bagno",
+  "002",
+  "L",
+  "rosso",
+  "disponibile"
+);
+const costume3 = new Prodotto(
+  "costume da bagno",
+  "003",
+  "S",
+  "bianco",
+  "disponibile"
+);
+const pareo1 = new Prodotto(
+  "pareo",
+  "004",
+  "taglia unica",
+  "pattern foglie",
+  "disponibile"
+);
+const cappello1 = new Prodotto("cappello", "005", "52", "nero", "disponibile");
+
+const cliente1 = new Cliente(
+  "Andrea",
+  "Ferrari",
+  "andrea.ferrari@example.com",
+  "Paypal"
+);
+const cliente2 = new Cliente(
+  "Giorgio",
+  "Mastrota",
+  "vendo.pentole@example.com",
+  "contanti"
+);
+const cliente3 = new Cliente(
+  "Carlo",
+  "Cracco",
+  "carlo.cucina@example.com",
+  "Carta di Credito"
+);
