@@ -84,7 +84,7 @@ class ProcessoProduzione implements IProcessoProduzione {
   constructor(
     nomeProcesso: string,
     descrizione: string,
-    prodottiInProduzione: IProdotto[]
+    prodottiInProduzione: IProdotto[] = []
   ) {
     this.nomeProcesso = nomeProcesso;
     this.descrizione = descrizione;
@@ -146,3 +146,33 @@ const cliente3 = new Cliente(
   "carlo.cucina@example.com",
   "Carta di Credito"
 );
+
+const processo1 = new ProcessoProduzione(
+  "Riciclo reti da pesca",
+  "Processo che utilizza reti da pesca per creare filati riciclati."
+);
+const processo2 = new ProcessoProduzione(
+  "Riciclo Plastica da Bottiglie",
+  "Processo che utilizza bottiglie di plastica per creare nuovi materiali per la produzione di costumi.",
+  []
+);
+
+const processo3 = new ProcessoProduzione(
+  "Riciclo Rifiuti da Pescatori",
+  "Processo che ricicla altri rifiuti da pescatori per creare nuovi filati e materiali.",
+  []
+);
+//aggiungi prodotti alla produzione
+processo1.aggiungiProdotto(costume1);
+processo1.aggiungiProdotto(costume2);
+processo2.aggiungiProdotto(costume3);
+processo2.aggiungiProdotto(pareo1);
+processo3.aggiungiProdotto(cappello1);
+
+//Ordina prodotti
+cliente1.ordinaProdotto(costume1);
+cliente2.ordinaProdotto(cappello1);
+cliente3.ordinaProdotto(pareo1);
+
+//test prodotto esaurito (mastrota ha comprato il cappello che volevo)
+cliente1.ordinaProdotto(cappello1);
