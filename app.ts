@@ -54,3 +54,46 @@ class Prodotto implements IProdotto {
     }
   }
 }
+
+class Cliente implements ICliente {
+  nome: string;
+  cognome: string;
+  email: string;
+  metodoPagamentoPreferito: string;
+
+  constructor(
+    nome: string,
+    cognome: string,
+    email: string,
+    metodoPagamentoPreferito: string
+  ) {
+    this.nome = nome;
+    this.cognome = cognome;
+    this.email = email;
+    this.metodoPagamentoPreferito = metodoPagamentoPreferito;
+  }
+  ordinaProdotto(prodotto: IProdotto): void {
+    prodotto.assegnaCliente(this);
+  }
+}
+class ProcessoProduzione implements IProcessoProduzione {
+  nomeProcesso: string;
+  descrizione: string;
+  prodottiInProduzione: IProdotto[];
+
+  constructor(
+    nomeProcesso: string,
+    descrizione: string,
+    prodottiInProduzione: IProdotto[]
+  ) {
+    this.nomeProcesso = nomeProcesso;
+    this.descrizione = descrizione;
+    this.prodottiInProduzione = prodottiInProduzione;
+  }
+  aggiungiProdotto(prodotto: IProdotto): void {
+    this.prodottiInProduzione.push(prodotto);
+    console.log(
+      `Prodotto ${prodotto.tipo} con id ${prodotto.id} aggiunto al processo ${this.nomeProcesso}. `
+    );
+  }
+}
