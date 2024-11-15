@@ -1,5 +1,12 @@
 # Sunnee Beachwear - A Sustainable Fashion Project
 
+## Notes
+
+- **The company is entirely fictional**, created solely for this test project.
+- The **main purpose of this project** is to practice TypeScript by building a real-world system model while showcasing how technology can enhance sustainability in fashion.
+
+---
+
 ## Project Overview
 
 **Sunnee** is a fictional brand dedicated to innovating the beachwear industry using exclusively recycled plastic fibers. The brand was founded with the vision of reducing ocean pollution while providing high-quality, eco-friendly swimsuits and accessories. This TypeScript project models the operational structure of **Sunnee**, focusing on interactions between customers, beachwear products, and sustainable production processes.
@@ -55,13 +62,6 @@ To see the project in action and test its functionality, visit the following [Co
 2. **Customer Interaction**: Customers are created and can place orders for products. The system checks if a product is available before assigning it to a customer.
   
 3. **Production Process**: Products are added to specific production processes (e.g., "Riciclo Reti da Pesca"). The processes are simulated to reflect the steps in creating sustainable beachwear.
-
----
-
-## Additional Notes
-
-- **The company is entirely fictional**, created solely for this test project.
-- The **main purpose of this project** is to practice TypeScript by building a real-world system model while showcasing how technology can enhance sustainability in fashion.
 
 ---
 
