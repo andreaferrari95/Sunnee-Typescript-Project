@@ -6,3 +6,11 @@ interface IProdotto {
   stato: "disponibile" | "esaurito";
   assegnaCliente(cliente: ICliente): void;
 }
+
+interface ICliente {
+  nome: string;
+  cognome: string;
+  email: string;
+  metodoPagamentoPreferito: string;
+  ordinaProdotto(prodotto: IProdotto): void;
+}
