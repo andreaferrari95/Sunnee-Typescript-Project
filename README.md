@@ -17,7 +17,7 @@ The project demonstrates how technology can support sustainable innovation in th
 
 ## Purpose of the Project
 
-This TypeScript project was created as a test for the **StartToImpact University** [Master's course in TypeScript](https://www.start2impact.it/master/). The focus is on learning and applying TypeScript skills to build a working system model, with the goal of demonstrating the power of TypeScript in solving real-world sustainability problems in fashion.
+This TypeScript project was created as a test for the **Start2Impact University** [Master's course in TypeScript](https://www.start2impact.it/master/). The focus is on learning and applying TypeScript skills to build a working system model, with the goal of demonstrating the power of TypeScript in solving real-world sustainability problems in fashion.
 
 ---
 
