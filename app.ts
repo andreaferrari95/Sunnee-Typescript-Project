@@ -14,3 +14,10 @@ interface ICliente {
   metodoPagamentoPreferito: string;
   ordinaProdotto(prodotto: IProdotto): void;
 }
+
+interface IProcessoProduzione {
+  nomeProcesso: string;
+  descrizione: string;
+  prodottiInProduzione: IProdotto[];
+  aggiungiProdotto(prodotto: IProdotto): void;
+}
